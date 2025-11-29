@@ -75,38 +75,12 @@ Reset Environment → Get Initial State
 
 ---
 
-## Configuration Parameters
-├── Models Folder: 'rl_trader_models'
-├── Rewards Folder: 'rl_trader_rewards'
-├── Model File: 'dqn.weights.h5'
-├── Training Episodes: 2,000
-├── Batch Size: 32
-├── Initial Investment: $20,000
-├── Train/Test Split: 50/50 (temporal split)
-└── Test Epsilon: 0.01
+## **Training and Testing the agent**
+-  `python main.py -m train`
 
-##File structure
-├── main.py                      
-├── environment.py              
-├── agent.py
-├── replay_buffer.py
-├── plot_rl_rewards.py
-│
-├── aapl_msi_sbux.csv           
-│
-├── rl_trader_models/
-│   ├── dqn.weights.h5          
-│   └── scaler.pkl             
-│
-└── rl_trader_rewards/
-    ├── train.npy             
-    └── test.npy
+- `python plot_rl_rewards.py -m train`
 
-##Training the agent
-python main.py -m train
-##Plot rewards
-python plot_rl_rewards.py -m train
-##Testing the agent
-python main.py -m test
-##Plot rewards
-python plot_rl_rewards.py -m test
+- `python main.py -m test`
+
+- `python plot_rl_rewards.py -m test`
+---
