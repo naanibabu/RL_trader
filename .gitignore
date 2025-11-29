@@ -1,0 +1,50 @@
+# -------------------------
+# Machine Learning Files
+# -------------------------
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.joblib
+*.npy
+*.npz
+*.pb
+*.ckpt
+*.onnx
+*.tflite
+
+# TensorBoard logs
+logs/
+runs/
+
+# Checkpoints
+checkpoints/
+models/
+
+# Large datasets
+data/
+datasets/
+*.csv
+*.xlsx
+*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
